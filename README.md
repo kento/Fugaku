@@ -1,26 +1,19 @@
 # Fugaku
 
-This landing page provides an overview of the Supercomputer Fugaku operated by RIKEN R-CCS.
+This landing page provides an overview of the Supercomputer Fugaku operated by [RIKEN R-CCS](https://www.r-ccs.riken.jp/en/).
 It aggregates publicly available resources, software, and documentation. More detailed
 materials are available to approved users through official access programs.
-
-- Official Fugaku portal:
-  https://www.r-ccs.riken.jp/en/fugaku/
-- RIKEN R-CCS homepage:
-  https://www.r-ccs.riken.jp/en/
 
 ---
 
 ## Overview
 
 Fugaku is a flagship exascale-class supercomputer developed by RIKEN R-CCS in collaboration
-with Fujitsu. It is powered by the A64FX ARM-based processor and is designed for high-performance
+with Fujitsu. It is powered by the [A64FX](https://www.r-ccs.riken.jp/en/) ARM-based processor and is designed for high-performance
 computing (HPC), AI workloads, and data-centric science.
 
-- Architecture overview:
-  https://www.r-ccs.riken.jp/en/fugaku/architecture/
-- Performance and benchmarks:
-  https://www.r-ccs.riken.jp/en/fugaku/results/
+- [Architecture overview](https://www.r-ccs.riken.jp/en/fugaku/about/)
+- [Performance and benchmarks](https://www.r-ccs.riken.jp/en/fugaku/research/awards/)
 
 ---
 
@@ -28,60 +21,47 @@ computing (HPC), AI workloads, and data-centric science.
 
 Access to Fugaku is managed through HPCI:
 
-- Fee-based Access  
-  https://www.hpci-office.jp/en/using_hpci/proposal_submission_current/fugaku_fee_based
-
-- Trial Access  
-  https://www.hpci-office.jp/en/using_hpci/proposal_submission_current/fugaku_trial
-
-- General HPCI portal  
-  https://www.hpci-office.jp/
+- [Fee-based Access](https://www.hpci-office.jp/en/using_hpci/proposal_submission_current/fugaku_fee_based)
+- [Trial Access](https://www.hpci-office.jp/en/using_hpci/proposal_submission_current/fugaku_trial)
+- [other](https://www.hpci-office.jp/en/using_hpci/proposal_submission_current)
 
 ---
 
 ## Documentation
 
 ### Official Documentation
-- User guides (R-CCS):
-  https://www.r-ccs.riken.jp/en/fugaku/docs/
-- FAQ:
-  https://www.r-ccs.riken.jp/en/fugaku/faq/
+- [User guides (R-CCS)](https://www.r-ccs.riken.jp/en/fugaku/user-manuals/)
+
+### HPCI Docs
+- [Supercomputer Fugaku](https://www.hpci-office.jp/en/using_hpci/hardware_software_resource/2026/r-ccs_riken_2026-2)
 
 ### Community / GitHub Docs
-- Fugaku documentation repo:
-  https://github.com/RIKEN-RCCS/fugaku-doc/tree/main/docs
+- [Fugaku documentation repo](https://github.com/RIKEN-RCCS/fugaku-doc/tree/main/docs)
 
 ---
 
 ## System Access
 
 ### Interactive / Web
-- onDemand:
-  https://github.com/RIKEN-RCCS/ondemand_fugaku
-- onDemand demo:
-  https://github.com/RIKEN-RCCS/ondemand_fugaku_demo
+- [onDemand](https://github.com/RIKEN-RCCS/ondemand_fugaku) and [onDemand demo](https://github.com/RIKEN-RCCS/ondemand_fugaku_demo)
 
 ### CLI
 - SSH access (standard HPC workflow)
 
 ### Programmatic
-- REST API:
-  https://github.com/RIKEN-RCCS/fugaku-api
+- [REST API](https://github.com/RIKEN-RCCS/fugaku-api)
 
 ---
 
 ## Software Ecosystem
 
 ### Package Management
-- Spack (Fugaku fork):
-  https://github.com/RIKEN-RCCS/spack
-- LLVM toolchain via Spack:
-  https://github.com/RIKEN-RCCS/PrivLLVMSpack
+- [Spack](https://github.com/RIKEN-RCCS/spack) (when using sysroot'd LLVM please refer to [LLVM toolchain via Spack](https://github.com/RIKEN-RCCS/PrivLLVMSpack)) 
 
 ### Compilers
-- Fujitsu Compiler (FCC/FORTRAN/C++)
-  https://www.fujitsu.com/global/products/computing/servers/supercomputer/development/
-- GNU toolchain (via Spack)
+- [Fujitsu Compiler (FCC/FORTRAN/C++)](https://www.r-ccs.riken.jp/fugaku/docs/user-guide/prog-guide/pdf/en/programming_common_part_programming_guide.pdf)
+- GNU toolchain (via OS and Spack)
+- LLVM toolchain
 
 ### MPI / Parallel Runtime
 - Fujitsu MPI (MPI-3 compliant)
@@ -91,8 +71,8 @@ Access to Fugaku is managed through HPCI:
 
 ## Containerization
 
-- Singularity / Apptainer guide:
-  https://github.com/RIKEN-RCCS/fugaku-singularity-guide
+- [Singularity / Apptainer guide](https://github.com/RIKEN-RCCS/fugaku-singularity-guide)
+  
 
 ---
 
@@ -104,7 +84,7 @@ Access to Fugaku is managed through HPCI:
   - **FFTW** (Fujitsu-optimized)  
   - **SSL2 math libraries** (A64FX optimized)
 - **Fujitsu MPI** (MPI-3 compliant)
-- **MPICH-Tofu** (alternative MPI implementation)  
+- [**MPICH-Tofu**](https://github.com/yutaka-ishikawa/mpich-tofu) (alternative MPI implementation)  
   More details: [Fugaku Software Documentation](https://www.hpci-office.jp/en/using_hpci/hardware_software_resource/2026/r-ccs_riken_2026-2)
 
 ---
@@ -219,8 +199,7 @@ For a **full list of software** and availability, check the **HPCI Software Reso
 
 ## Datasets
 
-- F-DATA:
-  https://github.com/RIKEN-RCCS/F-DATA  
+- [F-DATA](https://github.com/RIKEN-RCCS/F-DATA)
   A Fugaku workload dataset for job-centric predictive modelling in HPC systems.
 
 - Data repositories (R-CCS projects):
@@ -291,5 +270,4 @@ For a **full list of software** and availability, check the **HPCI Software Reso
 
 ## Citation / Acknowledgment
 
-If you use Fugaku resources, please follow R-CCS acknowledgment guidelines:
-https://www.r-ccs.riken.jp/en/fugaku/acknowledgement/
+If you use Fugaku resources, please follow [HPCI acknowledgment guidelines](https://www.hpci-office.jp/en/for_users/hpci_info_manuals/acknowledgement).
